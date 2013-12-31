@@ -1,4 +1,4 @@
 lovecard
 ========
 
-a web responsive site with beautiful cards
+a  responsive web site for beautiful cards
