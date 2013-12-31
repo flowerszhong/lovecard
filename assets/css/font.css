@@ -1,0 +1,4 @@
+@font-face {
+  font-family: "Blooming Grove";
+  src: url(../font/bloominggrove/bgrove.ttf) format('truetype'), url(../font/bloominggrove/bgrove.otf) format('opentype');
+}

@@ -1,17 +1,56 @@
-/* line 1, ../scss/index.scss */
-.hd {
-  padding-top: 150px;
-  text-align: center;
+/* line 6, ../scss/index.scss */
+body {
+  background-color: #FDFDFD !important;
 }
 
-/* line 7, ../scss/index.scss */
+/* line 10, ../scss/index.scss */
+.hd {
+  padding-top: 50px;
+  text-align: center;
+  background-color: #fff;
+  font-family: "Blooming Grove", Georgia, serif;
+}
+
+/* line 16, ../scss/index.scss */
+.hd h1 {
+  font-family: "Blooming Grove", Georgia, serif;
+  font-size: 60px;
+  color: lightpink;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  text-shadow: red 0px 3px 3px;
+}
+
+/* line 23, ../scss/index.scss */
+.navbar {
+  font-family: "Blooming Grove", Georgia, serif;
+  color: lightpink;
+}
+
+@media (min-width: 768px) {
+  /* line 30, ../scss/index.scss */
+  .hd {
+    padding-top: 0;
+    border-bottom: 1px solid #F3E1E1;
+  }
+
+  /* line 34, ../scss/index.scss */
+  .navbar-fixed-top {
+    position: static !important;
+    border-width: 1px 0 1px 0;
+  }
+}
+/* line 44, ../scss/index.scss */
 .bd .card {
   padding: 10px;
   height: 300px;
 }
 
-/* line 12, ../scss/index.scss */
+/* line 49, ../scss/index.scss */
 .bd .card img {
+  border-radius: 6px;
   width: 100%;
   height: 100%;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
 }

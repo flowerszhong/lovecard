@@ -1,0 +1,145 @@
+@import "../../vendor/bootstrap/less/variables.less";
+@import "../../vendor/bootstrap/less/mixins.less";
+
+@navbar-custom-color:             #777;
+@navbar-custom-bg:                #fff;
+@navbar-custom-border:            darken(@navbar-custom-bg, 6.5%);
+
+// Navbar links
+@navbar-custom-link-color:                lightpink;
+@navbar-custom-link-hover-color:          darken(@navbar-custom-link-color,10%);
+@navbar-custom-link-hover-bg:             transparent;
+@navbar-custom-link-active-color:         #555;
+@navbar-custom-link-active-bg:            @navbar-custom-bg;
+@navbar-custom-link-disabled-color:       #ccc;
+@navbar-custom-link-disabled-bg:          transparent;
+
+// Navbar brand label
+@navbar-custom-brand-color:               @navbar-custom-link-color;
+@navbar-custom-brand-hover-color:         darken(@navbar-custom-brand-color, 10%);
+@navbar-custom-brand-hover-bg:            transparent;
+
+// Navbar toggle
+@navbar-custom-toggle-hover-bg:           #ddd;
+@navbar-custom-toggle-icon-bar-bg:        #ccc;
+@navbar-custom-toggle-border-color:       #ddd;
+
+
+// custom navbar
+.navbar-custom {
+  background-color: @navbar-custom-bg;
+  border-color: @navbar-custom-border;
+
+  .navbar-brand {
+    color: @navbar-custom-brand-color;
+    &:hover,
+    &:focus {
+      color: @navbar-custom-brand-hover-color;
+      background-color: @navbar-custom-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: @navbar-custom-color;
+  }
+
+  .navbar-nav {
+    > li > a {
+      color: @navbar-custom-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-custom-link-hover-color;
+        background-color: @navbar-custom-link-hover-bg;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-custom-link-active-color;
+        background-color: @navbar-custom-link-active-bg;
+      }
+    }
+    > .disabled > a {
+      &,
+      &:hover,
+      &:focus {
+        color: @navbar-custom-link-disabled-color;
+        background-color: @navbar-custom-link-disabled-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: @navbar-custom-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: @navbar-custom-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: @navbar-custom-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: @navbar-custom-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: @navbar-custom-link-active-bg;
+        color: @navbar-custom-link-active-color;
+      }
+    }
+
+    @media (max-width: @grid-float-breakpoint-max) {
+      // Dropdowns get custom display when collapsed
+      .open .dropdown-menu {
+        > li > a {
+          color: @navbar-custom-link-color;
+          &:hover,
+          &:focus {
+            color: @navbar-custom-link-hover-color;
+            background-color: @navbar-custom-link-hover-bg;
+          }
+        }
+        > .active > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-custom-link-active-color;
+            background-color: @navbar-custom-link-active-bg;
+          }
+        }
+        > .disabled > a {
+          &,
+          &:hover,
+          &:focus {
+            color: @navbar-custom-link-disabled-color;
+            background-color: @navbar-custom-link-disabled-bg;
+          }
+        }
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: @navbar-custom-link-color;
+    &:hover {
+      color: @navbar-custom-link-hover-color;
+    }
+  }
+
+}
