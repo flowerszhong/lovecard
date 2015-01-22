@@ -1,3 +1,3 @@
-#a mini site for pin love card
+#a mini site for pin Love Card
 
 copyright flowerszhong
