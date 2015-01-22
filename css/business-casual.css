@@ -131,6 +131,7 @@ footer p {
         color: #ea3a9e;
     }
 
+
     .top-divider {
         margin-top: 0;
     }
@@ -190,6 +191,13 @@ footer p {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .brand-name {
+        color: #ea3a9e;
     }
 }
 
